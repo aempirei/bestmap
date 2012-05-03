@@ -1,0 +1,18 @@
+bestmap
+Minimum File Difference Bipartite Matching Tool
+Copyright(c) 2012 by Christopher Abad | 20 GOTO 10
+email: aempirei@gmail.com aempirei@256.bz
+http://www.256.bz/ http://www.twentygoto10.com/
+https://github.com/aempirei/bestmap/
+aim: ambientempire
+
+bestmap takes two file lists and cross-compares the files via diff, and optionally, gzip,
+to determine the optimal mapping between the file lists to maximize total file similarity.
+a matching file should be generated after a successful run. run bestmap with no parameters
+to view the parameter options. some configuration options can be found in etc/
+
+you need perl, bash, gzip and diff.
+
+you need the Algorithm::Munkres CPAN module.
+
+that should be it.
