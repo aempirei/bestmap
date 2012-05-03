@@ -1,5 +1,12 @@
 #!/bin/bash
 
+if [ ! -f etc/config ] || [ ! -f bipartite.pl ]; then
+	echo
+	echo $0 is written in a manner that requires running from within its own directory.
+	echo
+	exit
+fi
+
 source etc/config
 
 if [ ! -f "$1" ] || [ ! -f "$2" ]; then
