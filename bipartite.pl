@@ -59,9 +59,14 @@ foreach my $row (@$im) {
 assign($im, $om);
 
 foreach my $li (0..$#$om) {
+
 	my $ri = $om->[$li];
+
 	my $l = $lf->{$li};
 	my $r = $rf->{$ri};
+
+	$l = "" unless(defined $l);
+	$r = "" unless(defined $r);
 
 	$l =~ s/"/\\"/g;
 	$r =~ s/"/\\"/g;
