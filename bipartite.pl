@@ -51,7 +51,7 @@ while(my $line = <STDIN>) {
 
 foreach my $row (@$im) {
 	foreach my $item (@$row) {
-		$item = $maxweight unless(defined $item);
+		$item //= $maxweight;
 		#$item = $maxweight - $item;
 	}
 }
@@ -65,8 +65,8 @@ foreach my $li (0..$#$om) {
 	my $l = $lf->{$li};
 	my $r = $rf->{$ri};
 
-	$l = "" unless(defined $l);
-	$r = "" unless(defined $r);
+	$l //= "";
+	$r //= "";
 
 	$l =~ s/"/\\"/g;
 	$r =~ s/"/\\"/g;
