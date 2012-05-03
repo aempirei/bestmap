@@ -15,4 +15,8 @@ you need perl, bash, gzip and diff.
 
 you need the Algorithm::Munkres CPAN module.
 
+bestmap.sh is the primary script you run against a pair of file lists.
+
+bipartite.pl is called from bestmap.sh but it can also be run against a weights file.
+
 that should be it.
